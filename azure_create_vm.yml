@@ -1,4 +1,5 @@
 - name: Create Azure VM
+  hosts: all
   tasks:
   - name: Create VM with defaults
     azure_rm_virtualmachine:
