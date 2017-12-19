@@ -1,6 +1,4 @@
 - name: Create Azure VM
-  hosts: localhost
-  connection: local
   tasks:
   - name: Create VM with defaults
     azure_rm_virtualmachine:
