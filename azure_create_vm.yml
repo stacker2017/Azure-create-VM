@@ -4,12 +4,13 @@
   tasks:
   - name: Create VM with defaults
     azure_rm_virtualmachine:
-        resource_group: Testing
+        resource_group: awx
         name: testvm10
         admin_username: ubuntu
         admin_password: Password123456
         image:
-           offer: CentOS
-           publisher: OpenLogic
-           sku: '7.1'
+           offer: UbuntuServer
+           publisher: Canonical
+           sku: '16.04-LTS'
            version: latest
+        vm_size: Standard_DS1_v2
