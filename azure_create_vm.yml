@@ -5,7 +5,7 @@
   - name: Create VM with defaults
     azure_rm_virtualmachine:
         resource_group: awx
-        name: testvm11
+        name: {{ vm_name }}
         admin_username: ubuntu
         admin_password: Password123456
         image:
