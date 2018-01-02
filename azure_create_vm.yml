@@ -4,7 +4,7 @@
   tasks:
   - name: Create VM with defaults
     azure_rm_virtualmachine:
-        resource_group: nginx
+        resource_group: awx
         name: testvm11
         admin_username: ubuntu
         admin_password: Password123456
