@@ -7,8 +7,8 @@
         resource_group: "{{ resource_group }}"
         name: "{{ vm_name }}"
         vm_size: "{{ acc_type }}"
-        storage_account: "{{ storage_name }}"
-        network_interfaces: "{{ nic1 + vm_name }}"
+        storage_account: "{{ 'storage1' + vm_name }}"
+        network_interfaces: "{{ 'nic1' + vm_name }}"
         admin_username: ubuntu
         admin_password: Password123456
         image:
