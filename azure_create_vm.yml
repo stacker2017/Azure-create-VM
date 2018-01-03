@@ -4,8 +4,11 @@
   tasks:
   - name: Create VM with defaults
     azure_rm_virtualmachine:
-        resource_group: awx
+        resource_group: "{{ resource_group }}"
         name: "{{ vm_name }}"
+        vm_size: "{{ acc_type }}"
+        storage_account: "{{ storage_name }}"
+        network_interfaces: "{{ nic1 + vm_name }}"
         admin_username: ubuntu
         admin_password: Password123456
         image:
@@ -13,4 +16,3 @@
            publisher: Canonical
            sku: '16.04-LTS'
            version: latest
-        vm_size: Standard_DS1_v2
