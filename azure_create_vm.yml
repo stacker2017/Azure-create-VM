@@ -6,7 +6,7 @@
     azure_rm_virtualmachine:
         resource_group: "{{ rs_group }}"
         name: "{{ vm_name }}"
-        vm_size: "{{ acc_type }}"
+        vm_size: "{{ vm_size }}"
         storage_account: "{{ 'storage1' + vm_name }}"
         network_interfaces: "{{ 'nic1' + vm_name }}"
         admin_username: ubuntu
